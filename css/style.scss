@@ -1,0 +1,106 @@
+@import './variables.scss';
+@import './normalize.scss';
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.section-outer{}
+.section-inner{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+// == header ==
+.section-header{
+    background: url('../img/background.png') no-repeat center;
+    background-size: cover;
+
+    
+    .section-inner{
+        height: 100vh;
+        position: relative;
+        z-index: 10;
+    }
+    
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8));
+        z-index: 5;
+    }
+
+    &-navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 50px;
+        color: $color-white;
+
+        &__logo{}
+
+        &__list{
+            display: flex;
+
+            li+li{
+                margin-left: 20px;
+            }
+
+            li{
+                list-style: none;
+
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $color-white;
+                }
+            }
+        }
+
+        &__stuff{
+            display: flex;
+            align-items: center;
+            
+            &__language{
+                display: flex;
+                align-items: center;
+
+                .logo{}
+                .text{
+                    margin-left: 11px;
+                }
+                .arrow{
+                    margin-left: 8px;
+                    cursor: pointer;
+                }
+            }
+
+            &__button{
+                margin-left:28px;
+                font-size: 14px;
+                line-height: 17px;
+                
+                button{
+                    text-transform: uppercase;
+                    padding: 12px 20px;
+                    background: transparent;
+                    border: 1px solid;
+                    color: $color-white;
+                    border-radius: 6px; 
+                    outline: none;
+                    cursor: pointer;
+
+                }
+            }
+            
+        }
+    }
+}
