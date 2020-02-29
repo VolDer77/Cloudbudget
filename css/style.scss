@@ -25,6 +25,8 @@ body{
         height: 100vh;
         position: relative;
         z-index: 10;
+        display: flex;
+        flex-direction: column;
     }
     
     &::before{
@@ -44,6 +46,7 @@ body{
         justify-content: space-between;
         padding-top: 50px;
         color: $color-white;
+        flex-shrink: 1;
 
         &__logo{}
 
@@ -97,10 +100,64 @@ body{
                     border-radius: 6px; 
                     outline: none;
                     cursor: pointer;
+                    transition: .3s;
 
+                    &:hover{
+                        background-color: $color-white;
+                        color: $color-red;
+                    }
                 }
             }
             
         }
     }
+
+    &-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        text-align: center;
+
+        &__wrapper{}
+
+        &__title{
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 86px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $color-white;
+            margin-bottom: 40px;
+        }
+
+        &__text{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 150%;
+            width: 50%;
+            margin: 0 auto 40px;
+            color: $color-white;
+        }
+        &__button{
+
+            button{
+                text-transform: uppercase;
+                padding: 17px 52px;
+                background: $color-white;
+                border: 1px solid;
+                color: $color-red;
+                border-radius: 6px; 
+                outline: none;
+                cursor: pointer;
+                transition: .3s;
+
+                &:hover{
+                    background-color: transparent;
+                    color: $color-white;
+                }
+            }
+        }
+    }
 }
+// == /header ==
