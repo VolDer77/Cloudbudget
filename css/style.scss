@@ -27,7 +27,6 @@ body{
         z-index: 10;
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
     
     &::before{
@@ -77,9 +76,12 @@ body{
                 display: flex;
                 align-items: center;
 
+                .logo{}
+
                 .text{
                     margin-left: 11px;
                 }
+
                 .arrow{
                     margin-left: 8px;
                     cursor: pointer;
@@ -117,6 +119,7 @@ body{
         justify-content: center;
         flex-grow: 1;
         text-align: center;
+        align-items: center;
 
         &__wrapper{}
         
@@ -138,6 +141,7 @@ body{
             margin: 0 auto 40px;
             color: $color-white;
         }
+
         &__button{
 
             button{
@@ -160,3 +164,184 @@ body{
     }
 }
 // == /header ==
+
+// == offer ==
+
+.section-offer{
+    padding-top: 95px;
+    padding-bottom: 95px;
+    
+    .section-inner{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    &-content{
+        flex-basis: 445px;
+        margin-right: 125px;
+
+        &__title{
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 43px;
+            color: $color-black;
+            margin-bottom: 30px;
+        }
+
+        &__text{
+            font-size: 14px;
+            line-height: 140%;
+            color: $color-black;
+            margin-bottom: 20px;
+        }
+
+        &__link{
+            
+            a{
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 140%;
+                color: $color-red;
+            }
+        }
+    }
+
+    &-video{
+        position: relative;
+        
+        &__main-img{}
+
+        &__img-button{
+            position: absolute;
+            top: 125px;
+            left: -34px;
+            cursor: pointer;
+        }
+    }
+}
+
+// ==features ==
+
+.section-features{
+    background-color: $color-gray;
+    padding-top: 64px;
+    padding-bottom: 236px;
+
+    &-title{
+        text-align: center;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 43px;
+        color: $color-black;
+        margin-bottom: 64px;
+    }
+
+    &-content{
+        display: flex;
+        justify-content: space-between;
+
+        &-item{
+            flex-basis: 350px;
+            position: relative;
+            
+
+            &__img{}
+
+            &__wrapper{
+                position: absolute;
+                bottom: -112px;
+                left: 30px;
+                right: 50%;
+                width: 292px;
+                background-color: $color-white;
+                padding: 32px 32px;
+                box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                text-align: center;
+                color: $color-black-secondary;
+
+                .title{
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-bottom: 20px;
+                }
+
+                .text{
+                    font-size: 12px;
+                    line-height: 150%;
+                    margin-bottom: 25px;
+                }
+
+                .link{
+
+                    a{
+                        text-decoration: none;
+                        font-weight: bold;
+                        font-size: 12px;
+                        line-height: 150%;
+                        color: $color-red;
+                    }
+
+                }
+            }
+        }
+    }
+}
+// == /features ==
+
+// == technology ==
+
+.section-technology{
+    padding-top: 64px;
+    padding-bottom: 120px;
+    
+
+    &-title{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+        color: $color-black;
+
+    }
+
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 52px;
+    }
+
+    &-item{
+        text-align: center;
+        flex-basis: 225px;
+        position: relative;
+        
+        &__img{
+            margin-bottom: 35px;
+        }
+
+        &__title{
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: $color-black-secondary;
+            margin-bottom: 10px;
+        }
+
+        &__text{
+            font-size: 12px;
+            line-height: 14px;
+            color: $color-black;
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        &__background{
+            position: absolute;
+            bottom: 71px;
+            left: 91px;
+        }
+    }
+}
