@@ -461,7 +461,7 @@ body{
         &__id{
 
             input{
-                // width: 253px;
+                width: 253px;
                 //зроблено не зовсім правильно
             }
             input:not(:first-child){
@@ -491,4 +491,94 @@ body{
             }
         }
     }
+}
+
+// == /contact ==
+
+// == footer ==
+.section-footer{
+    background: $color-gray;
+    padding: 86px 0;
+    color: $color-black-secondary;
+
+    &-info{
+        display: flex;
+        font-size: 12px;
+        margin-bottom: 86px;
+
+        &-item + &-item{
+            margin-left: 30px;
+        }
+
+        &-item{
+            flex-basis: 254px;
+
+
+            .title{
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 30px;
+
+            }
+            .text{
+                line-height: 150%;
+                
+            }
+
+            &__address{
+                
+            .text{
+                width: 70%;
+
+            }
+            }
+           
+            &__services{
+
+                li {
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        line-height: 160%;
+                        font-size: 12px;
+                        color: $color-black-secondary;
+                    }
+                }
+            }
+
+            &__get-in-touch{
+
+                .email{
+                    margin-bottom: 11px;
+                }
+
+                .phone{
+                    margin-bottom: 20px;
+                }
+
+                .links{
+
+                    a+a{
+
+                        margin-left: 16px;
+                    }
+
+                }
+            }
+
+            &__support{
+
+                .title{
+                    margin-bottom: 32px;
+                }
+            }
+        }
+    }
+
+    &-copyright{
+        font-size: 12px;
+        line-height: 14px;
+    }
+
 }

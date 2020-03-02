@@ -832,6 +832,10 @@ body {
           flex-direction: column;
 }
 
+.section-contact-form__id input {
+  width: 253px;
+}
+
 .section-contact-form__id input:not(:first-child) {
   margin-left: 30px;
 }
@@ -854,4 +858,74 @@ body {
 .section-contact-form__button button:hover {
   background-color: #fff;
   color: #ed4c5c;
+}
+
+.section-footer {
+  background: #fafafa;
+  padding: 86px 0;
+  color: #101010;
+}
+
+.section-footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 86px;
+}
+
+.section-footer-info-item + .section-footer-info-item {
+  margin-left: 30px;
+}
+
+.section-footer-info-item {
+  -ms-flex-preferred-size: 254px;
+      flex-basis: 254px;
+}
+
+.section-footer-info-item .title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+.section-footer-info-item .text {
+  line-height: 150%;
+}
+
+.section-footer-info-item__address .text {
+  width: 70%;
+}
+
+.section-footer-info-item__services li {
+  list-style: none;
+}
+
+.section-footer-info-item__services li a {
+  text-decoration: none;
+  line-height: 160%;
+  font-size: 12px;
+  color: #101010;
+}
+
+.section-footer-info-item__get-in-touch .email {
+  margin-bottom: 11px;
+}
+
+.section-footer-info-item__get-in-touch .phone {
+  margin-bottom: 20px;
+}
+
+.section-footer-info-item__get-in-touch .links a + a {
+  margin-left: 16px;
+}
+
+.section-footer-info-item__support .title {
+  margin-bottom: 32px;
+}
+
+.section-footer-copyright {
+  font-size: 12px;
+  line-height: 14px;
 }
