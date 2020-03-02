@@ -19,12 +19,12 @@ body{
 .section-header{
     background: url('../img/background.png') no-repeat center;
     background-size: cover;
-
+    
     
     .section-inner{
-        height: 100vh;
         position: relative;
         z-index: 10;
+        height: 100vh;
         display: flex;
         flex-direction: column;
     }
@@ -64,6 +64,10 @@ body{
                     text-decoration: none;
                     text-transform: uppercase;
                     color: $color-white;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -217,6 +221,15 @@ body{
             top: 125px;
             left: -34px;
             cursor: pointer;
+            transform: translateZ(0px);
+            transition-duration: .3s;
+            transition-property: transform;
+
+            &:hover{
+          
+            transform: scale(1.25);
+
+            }
         }
     }
 }
@@ -378,6 +391,17 @@ body{
         }
 
         &__links{
+            
+            a{
+                transform: translateZ(0);
+                transition-duration: 0.3s;
+                transition-property: transform;
+                transition-timing-function: ease-out;
+                
+                &:hover{
+                    transform: translateY(-9px);
+                }
+            }
 
             a+a{
                 margin-left: 22px;
@@ -538,11 +562,22 @@ body{
 
                 li {
                     list-style: none;
+
+                    &:not(:last-child){
+                        margin-bottom: 5px;
+                    }
+
                     a{
                         text-decoration: none;
                         line-height: 160%;
                         font-size: 12px;
                         color: $color-black-secondary;
+                        transition: .2s ease-in-out;
+
+                        &:hover{
+                            color: $color-orange;
+                        }
+                        
                     }
                 }
             }
@@ -558,6 +593,16 @@ body{
                 }
 
                 .links{
+
+                    img{
+                        transform: translateZ(0px);
+                        transition-duration: .3s;
+                        transition-property: transform;
+                        
+                        &:hover{
+                            transform: scale(1.6);
+                        }
+                    }
 
                     a+a{
 
@@ -582,3 +627,4 @@ body{
     }
 
 }
+//== /footer ==
