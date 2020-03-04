@@ -350,9 +350,15 @@ body {
           box-sizing: border-box;
 }
 
+.section-outer {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .section-inner {
   max-width: 1100px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .section-header {
@@ -625,12 +631,17 @@ body {
   position: relative;
 }
 
+.section-features-content-item__img img {
+  width: 100%;
+  height: auto;
+}
+
 .section-features-content-item__wrapper {
   position: absolute;
   bottom: -112px;
   left: 30px;
   right: 50%;
-  width: 292px;
+  width: 83.4%;
   background-color: #fff;
   padding: 32px 32px;
   -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
@@ -897,7 +908,8 @@ body {
 
 .section-footer {
   background: #fafafa;
-  padding: 86px 0;
+  padding-top: 86px;
+  padding-bottom: 86px;
   color: #101010;
 }
 

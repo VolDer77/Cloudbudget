@@ -9,10 +9,14 @@ body{
     box-sizing: border-box;
 }
 
-.section-outer{}
+.section-outer{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .section-inner{
     max-width: 1100px;
     margin: 0 auto;
+    width: 100%;
 }
 
 // == header ==
@@ -258,14 +262,20 @@ body{
             flex-basis: 350px;
             position: relative;
 
-            &__img{}
+            &__img{
+
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
 
             &__wrapper{
                 position: absolute;
                 bottom: -112px;
                 left: 30px;
                 right: 50%;
-                width: 292px;
+                width: 83.4%;
                 background-color: $color-white;
                 padding: 32px 32px;
                 box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
@@ -487,6 +497,8 @@ body{
             input{
                 width: 253px;
                 //зроблено не зовсім правильно
+
+                // width: 100%;
             }
             input:not(:first-child){
                 margin-left: 30px;
@@ -522,7 +534,8 @@ body{
 // == footer ==
 .section-footer{
     background: $color-gray;
-    padding: 86px 0;
+    padding-top: 86px;
+    padding-bottom: 86px;
     color: $color-black-secondary;
 
     &-info{
